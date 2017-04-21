@@ -1,194 +1,160 @@
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        background-color: skyblue;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    header {
-        margin-bottom: 30px;
-    }
-
-    .carrierInfo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        padding: 5px;
-        background-color: plum;
-    }
-
-    .communicationInfo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        padding: 10px 5px;
-        background-color: thistle;
-    }
-
-    .textContainer {
-        background-color: papayawhip;
-        width: 500px;
-        margin: 30px auto;
-        border: 3px solid #14a296;
-        min-height: 700px;
-        position: relative;
-    }
-
-    .chat {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .chatleft {
-        justify-content: flex-start;
-        margin-left: 30px;
-    }
-
-    .chatleft>div {
-        background-color: ivory;
-        color: black;
-        position: relative;
-    }
-
-    .chatleft>div:after {
-        content: "";
-        position: absolute;
-        border-style: solid;
-        display: block;
-        width: 0;
-        top: 16px;
-        bottom: auto;
-        left: -20px;
-        border-width: 9px 21px 9px 0;
-        border-color: transparent ivory;
-    }
-
-    .chatright {
-        justify-content: flex-end;
-        margin-left: -30px;
-    }
-
-    .chatright>div {
-        background-color: skyblue;
-        color: white;
-        position: relative;
-    }
-
-    .chatright>div:after {
-        content: "";
-        position: absolute;
-        border-style: solid;
-        display: block;
-        width: 0;
-        top: 16px;
-        bottom: auto;
-        right: -20px;
-        border-width: 9px 0 9px 21px;
-        border-color: transparent skyblue;
-    }
-
-    .chatleft>div,
-    .chatright>div {
-        width: 40%;
-        padding: 20px;
-        border-radius: 20px;
-    }
-
-    .powderBlue {
-        background: skysblue;
-    }
-
-    .ivory {
-        background: #fffff0;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        background-color: thistle;
-        padding: 10px 5px;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-
-    footer input {
-        border-radius: 5px;
-        width: 250px;
-        height: 30px;
-    }
-
-    .fa.fa-circle {
-        font-size: .25em;
-    }
-
-    .speech-bubble .arrow {
-        border-style: solid;
-        position: absolute;
-    }
-
-    .bottom {
-        border-color: #c8c8c8 transparent transparent transparent;
-        border-width: 8px 8px 0px 8px;
-        bottom: -8px;
-    }
-
-    .textContainer {
-        box-sizing: content-box;
-        border: black solid 50px;
-        border-bottom: black solid 100px;
-        border-radius: 25px;
-        box-shadow: 0 0 10px 1px #555;
-    }
-
-    #sendButton {
-        background-color: transparent;
-        color: black;
-        font-weight: bold;
-        border: none;
-        box-shadow: none;
-        font-size: 1em;
-        font-family: 'Montserrat', sans-serif;
-        display: inline-block;
-    }
-    /* Creates the iPad Home button */
-
-    .fa-square-o {
-        color: darkgray;
-        padding: 20px;
-        border-radius: 100px;
-        background-color: azure;
-        font-size: 1.5em;
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        bottom: -80px;
-        left: 225px;
-        border: .25px solid #2D2D2D;
-    }
-
-    .blackGradient2 {
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+52 */
-        background: #45484d;
-        /* Old browsers */
-        background: -moz-linear-gradient(top, #45484d 0%, #000000 52%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #45484d 0%, #000000 52%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #45484d 0%, #000000 52%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000', GradientType=0);
-        /* IE6-9 */
-    }
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            background-color: skyblue;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        header {
+            margin-bottom: 30px;
+        }
+        
+        .carrierInfo {
+            display: flex;
+            justify-content: space-around;
+            padding: 5px;
+            background-color: plum;
+        }
+        
+        .communicationInfo {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 5px;
+            background-color: thistle;
+        }
+        
+        .textContainer {
+            box-sizing: content-box;
+            position: relative;
+            width: 500px;
+            height: 700px;
+            margin: 30px auto;
+            border: black solid 50px;
+            border-bottom: black solid 100px;
+            border-radius: 25px;
+            box-shadow: 0 0 10px 1px #555;
+            background-color: papayawhip;
+        }
+        
+        .chat {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .chatleft {
+            position: relative;
+            justify-content: flex-start;
+            margin-left: 30px;
+        }
+        
+        .chatleft>div {
+            background-color: ivory;
+            color: black;
+        }
+        
+        .chatright>div {
+            background-color: skyblue;
+            color: white;
+        }
+        /*       Creates the arrow for the left side speech bubble */
+        
+        .chatleft:after {
+            content: "";
+            position: absolute;
+            top: 16px;
+            left: -20px;
+            bottom: auto;
+            display: block;
+            width: 0;
+            border-style: solid;
+            border-width: 9px 21px 9px 0;
+            border-color: transparent ivory;
+        }
+        
+        .chatright {
+            position: relative;
+            justify-content: flex-end;
+            margin-left: -30px;
+        }
+        /*  Creates the arrow for the right side speech bubble */
+        
+        .chatright:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 16px;
+            bottom: auto;
+            right: -20px;
+            width: 0;
+            border-style: solid;
+            border-width: 9px 0 9px 21px;
+            border-color: transparent skyblue;
+        }
+        
+        .chatleft>div,
+        .chatright>div {
+            width: 40%;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px 5px;
+            background-color: thistle;
+        }
+        
+        footer input {
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        
+        #sendButton {
+            display: inline-block;
+            border: none;
+            background-color: transparent;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        /* Creates the iPad Home button */
+        
+        .fa-square-o {
+            position: absolute;
+            bottom: -80px;
+            left: 225px;
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            border: .25px solid #2D2D2D;
+            color: darkgray;
+            font-size: 24px;
+            text-align: center;
+            line-height: 60px;
+        }
+        
+        .blackGradient2 {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+52 */
+            background: #45484d;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #45484d 0%, #000000 52%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #45484d 0%, #000000 52%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #45484d 0%, #000000 52%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000', GradientType=0);
+            /* IE6-9 */
+        }
